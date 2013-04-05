@@ -188,3 +188,16 @@ snippet table
 	</table>${4}
 snippet textarea
 	<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">${4}</textarea>${5}
+
+snippet new
+	<!DOCTYPE HTML>
+	<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8"`Close()`>
+
+			<title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
+		</head>
+		<body>
+			${2}
+		</body>
+	</html>
