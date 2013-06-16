@@ -11,7 +11,7 @@ snippet fun
 	}
 # Anonymous Function
 snippet f
-	function(${1}) {${2}};
+	function(${1}) {${2}}
 # if
 snippet if
 	if (${1:true}) {${2}}
@@ -72,3 +72,17 @@ snippet get
 # Get Element
 snippet gett
 	getElementBy${1:Id}('${2}')${3}
+
+#jquery snippet
+snippet jfn
+	(function($) {
+		${1}	
+	})(jQuery);
+snippet fn
+	(function() {
+		${1}	
+	})();
+snippet jeach
+	$.each(${1:array}, function(i, v) {
+		${2://body...}	
+	});
